@@ -1,9 +1,9 @@
-function sum(a, b) {
+export function sum(a, b) {
   return a + b;
 }
 
-function sub(x, y) {
+export function sub(x, y) {
   return x - y;
 }
 
-module.exports = { sum, sub };
+// module.exports = { sum, sub };
