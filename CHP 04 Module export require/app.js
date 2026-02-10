@@ -1,10 +1,3 @@
-require("./xyz")
-const calculateSum = require("./sum")
+const sum = require("./sum")
 
-let a = 10;
-let b = 20;
-
-let x = 4
-
-calculateSum(a,b)
-
+console.log(sum(10, 12));
