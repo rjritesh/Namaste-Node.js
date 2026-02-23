@@ -1,10 +1,13 @@
-var name = "Namaste Node.js";
+const name = "Akshad Jaiswal"
 var a = 10;
 var b = 20;
-console.log(name);
-console.log(a + b);
+var c = a + b;
 
-console.log(globalThis);
-console.log(global)
-console.log(globalThis === global)
-console.log(this);
+console.log(name);
+console.log(c);
+
+// console.log(global)
+// The globalThis global property contains the global this value, which is usually akin to the global object.
+
+console.log(globalThis)
+console.log(globalThis=== global)
