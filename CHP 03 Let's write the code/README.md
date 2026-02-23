@@ -84,20 +84,3 @@
 2. The output `Hello, World!` should appear in the Command Prompt.
 
 ---
-### Let's talk about global objects in Node.js
-
-A global object is the top-level object in JavaScript that provides variables, functions, and built-in APIs which are accessible from anywhere in the program.
-
-The `window` object is a global object provided by the **browser**, not by the V8 engine. It exists only in browser environments and is not available in Node.js.
-
-In Node.js, the global object is called `global`. It serves a similar purpose to the `window` object in the browser and provides access to globally available APIs and values.
-
-Earlier, JavaScript had different global objects depending on the environment:
-- Browser → `window`
-- Node.js → `global`
-- Web Workers → `self`
-
-This difference caused confusion and led to environment-specific code.
-
-To solve this problem, JavaScript introduced `globalThis`.  
-`globalThis` is a standard and universal way to access the global object across all environments. It always points to the global object, whether the code is running in a browser, Node.js, or a web worker.
