@@ -21,8 +21,8 @@ Node.js leverages the V8 engine and libuv library to provide efficient handling 
 ### Incorrect Usage of `fs.readFileSync`
 
 ```javascript
-fs.readFileSync('./file.txt', 'utf-8', (err, data) => {
-    console.log("File data fetched synchronously: ", data);
+fs.readFileSync("./file.txt", "utf-8", (err, data) => {
+  console.log("File data fetched synchronously: ", data);
 });
 ```
 
@@ -36,10 +36,10 @@ fs.readFileSync('./file.txt', 'utf-8', (err, data) => {
 
 ```javascript
 try {
-    const dataSync = fs.readFileSync('./file.txt', 'utf-8');
-    console.log("File data fetched synchronously: ", dataSync);
+  const dataSync = fs.readFileSync("./file.txt", "utf-8");
+  console.log("File data fetched synchronously: ", dataSync);
 } catch (err) {
-    console.error("Error reading file synchronously: ", err);
+  console.error("Error reading file synchronously: ", err);
 }
 ```
 
@@ -53,8 +53,8 @@ try {
 console.log("Hello! Async");
 
 function mulFn(x, y) {
-    const result = x * y;
-    return result;
+  const result = x * y;
+  return result;
 }
 
 var a = 1078698;
@@ -73,9 +73,9 @@ console.log("Multiplication result is: ", c);
 
 ```javascript
 crypto.pbkdf2("myownpassword", "salt", 5000, 50, "sha512", (err, key) => {
-    console.log("Key is generated: ", key);
-    console.log("Key in hex format: ", key.toString('hex'));
-    console.log("Key in base64 format: ", key.toString('base64'));
+  console.log("Key is generated: ", key);
+  console.log("Key in hex format: ", key.toString("hex"));
+  console.log("Key in base64 format: ", key.toString("base64"));
 });
 ```
 
@@ -88,7 +88,7 @@ crypto.pbkdf2("myownpassword", "salt", 5000, 50, "sha512", (err, key) => {
 
 ```javascript
 https.get("https://dummyjson.com/products/1", (res) => {
-    console.log("Fetched data successfully!");
+  console.log("Fetched data successfully!");
 });
 ```
 
@@ -101,7 +101,7 @@ https.get("https://dummyjson.com/products/1", (res) => {
 
 ```javascript
 setTimeout(() => {
-    console.log("settimeout called after 5 sec");
+  console.log("settimeout called after 5 sec");
 }, 5000);
 ```
 
@@ -113,8 +113,8 @@ setTimeout(() => {
 #### `fs.readFile`
 
 ```javascript
-fs.readFile('./file.txt', 'utf-8', (err, data) => {
-    console.log("File data is: ", data);
+fs.readFile("./file.txt", "utf-8", (err, data) => {
+  console.log("File data is: ", data);
 });
 ```
 
@@ -132,12 +132,12 @@ var b = 20986;
 
 // Runs immediately when the call stack of the main thread is empty
 setTimeout(() => {
-    console.log("call me ASAP");
+  console.log("call me ASAP");
 }, 0);
 
 function mulFn(x, y) {
-    const result = x * y;
-    return result;
+  const result = x * y;
+  return result;
 }
 
 var c = mulFn(a, b);
